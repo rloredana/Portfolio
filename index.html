@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Name | Data Portfolio</title>
+    <link rel="icon" type="image/png" href="Lr_Icons_Logos/rl_white.png"> <!-- Some browsers (like Chrome) will automatically look for a favicon.ico file in the root directory of the website -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo and Name -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Lr_Icons_Logos/rl_white.png" alt="LR Logo" class="logo">
+                </a>
+                <h1>My Name</h1>
+            </div>
+            <!-- Navigation Links -->
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <div class="section-wrapper about-wrapper">
+        <section id="about">
+            <div class="content-wrapper">
+                <!-- About Me Title -->
+                <h2 class="section-title">About Me</h2>
+                <p>Data Analyst with experience in building complex data models and delivering meaningful insights to support team goals. Highly motivated and detail-oriented, with a strong passion for turning raw data into clear, actionable insights that drive business solutions.</p>
+                <br> <!-- This adds space between the two paragraphs -->
+                <p>Key Skills and Tools: Data Analysis, Data Visualization, Business Insights, Communication, Client Management, Google Analytics, SQL, BigQuery, Power BI, Looker Studio, Excel, Salesforce, Zoho CRM, Xero.</p>
+            </div>
+        </section>
+    </div>
+    
+<!-- Projects Section -->
+<div class="section-wrapper projects-wrapper">
+    <section id="projects">
+        <div class="content-wrapper">
+            <!-- Projects Title -->
+            <h2 class="section-title">Analytics & Visualization</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="Dash_Images/Sales___.png" alt="Sales Dashboard">
+                    <h3 class="section-subtitle">Sales Dashboard</h3>
+                    <p>Interactive sales dashboard displaying key metrics, performance trends, and insights.</p>
+                    <br>
+                    <p>Tools: Loker Studio, Salesforce, Excel.</p>
+                </div>
+                <div class="project">
+                    <img src="Dash_Images/E___).png" alt="Product Insights">
+                    <h3 class="section-subtitle">Product Insights</h3>
+                    <p>Ad platform insights dashboard showcasing user acquisition, and subscription analytics.</p>
+                     <br>
+                    <p>Tools: PowerBI, SQL, BigQuery.</p>
+                </div>
+                <div class="project">
+                    <img src="Dash_Images/trl.png" alt="SQL Project">
+                    <h3 class="section-subtitle">Marketing Insights</h3>
+                    <p>Marketing dashboard tracking campaign performance, engagement, and conversios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- workflows Projects Section -->
+<div class="section-wrapper workflows-wrapper">
+    <section id="workflows">
+        <div class="content-wrapper">
+            <!-- Projects Title -->
+            <h2 class="section-title">CRM, ETL & Sales Transformation</h2>
+            <div class="workflows-container">
+                <div class="workflows">
+                    <img src="crm_.png" alt="CRM">
+                    <br>
+                    <h3 class="section-subtitle">CRM Implementation Project</h3>
+                    <p>The CRM Setup Project includes configuring the CRM system, defining user roles, migrating data, and providing training and support to ensure successful implementation and usage.</p>
+                </div>
+                <div class="workflows">
+                    <img src="API-s.png" alt="API-BigQuery">
+                    <br>
+                    <h3 class="section-subtitle">ETL Process for Reporting & Analysis</h3>
+                    <p>The ETL process extracts data from Google Ads, Simpli.fi, and Xero, transforms it into a suitable format, and loads it into BigQuery for centralized reporting and analysis.</p>
+                    <p>Collection, cleaning and validation of data from internal and external sources</p>
+                </div>
+                <div class="workflows">
+                    <img src="Dash_Images/Sales_Dash_V5.png" alt="SQL Project">
+                    <br>
+                    <h3 class="section-subtitle">CRM Implementation Project</h3>
+                    <p>Key insights from SQL project. Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Skills Logos Section -->
+<div class="section-wrapper skills-wrapper">
+    <section id="skills-logos">
+        <div class="content-wrapper">
+            <!-- Skills Logos -->
+            <div class="skills-logos">
+                <ul>
+                    <li><img src="Tools_Logos/sql_logo.png" alt="SQL Logo"></li>
+                    <li><img src="Tools_Logos/excel_logo.png" alt="Excel Logo"></li>
+                    <li><img src="Tools_Logos/python_logo.png" alt="Python Logo"></li>
+                    <li><img src="Tools_Logos/looker_logo.png" alt="Looker Studio Logo"></li>
+                    <li><img src="Tools_Logos/powerbi_logo.png" alt="Power BI Logo"></li>
+                    <li><img src="Tools_Logos/salesforce_logo.png" alt="Salesforce Logo"></li>
+                    <li><img src="Tools_Logos/zoho.png" alt="Salesforce Logo"></li>
+                    <li><img src="Tools_Logos/hubspot.png" alt="Salesforce Logo"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 My Name</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- Up Arrow Button -->
+            <a href="#" class="back-to-top">︿</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTop = document.querySelector(".back-to-top");
+    
+            // Show/hide button on scroll
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) { 
+                    backToTop.style.display = "block"; // Show button
+                } else {
+                    backToTop.style.display = "none"; // Hide button
+                }
+            });
+    
+            // Smooth scroll to top
+            backToTop.addEventListener("click", function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>    
+    
+</body>
+</html>
