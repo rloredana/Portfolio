@@ -368,7 +368,7 @@ body, header, section, footer {
         align-items: center;
         gap: 1.5rem;
         text-align: center;
-        padding: 1rem 5%; /* Added extra padding for breathing room */
+        padding: 1rem 5%;
     }
 
     nav {
@@ -379,7 +379,7 @@ body, header, section, footer {
 
     /* Sections: Increase padding for better readability */
     section, .section-wrapper {
-        padding: 2.5rem 6%; /* Increased padding on mobile */
+        padding: 2.5rem 6%;
     }
 
     /* Projects & Workflows: Stack cards vertically */
@@ -403,11 +403,11 @@ body, header, section, footer {
         text-align: center;
     }
 
-    /* About Section: Make background image smaller & keep it on the right */
+    /* About Section: Keep image noticeable and to the right */
     .about-wrapper {
-        background-size: 150px auto; /* Shrinks the image */
-        background-position: right 10px center; /* Positions it to the right */
-        padding-right: 170px; /* Creates space so text doesn't overlap the image */
+        background-size: 40%; /* Scales image to 40% of container width */
+        background-position: right center; /* Keep it on the right */
+        padding-right: 45%; /* Creates enough space for text before image */
         background-repeat: no-repeat;
     }
 }
@@ -417,7 +417,8 @@ body, header, section, footer {
    ============================================================================ */
 @media screen and (max-width: 480px) {
     .about-wrapper {
-        background-size: 100px auto; /* Even smaller image for tiny screens */
-        padding-right: 120px; /* Adjust padding accordingly */
+        background-size: 50%; /* Slightly larger on very small screens for balance */
+        background-position: right center;
+        padding-right: 50%; /* Adjust text spacing accordingly */
     }
 }
