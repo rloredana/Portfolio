@@ -350,8 +350,9 @@ footer nav a {
 /* Tablet and below */
 @media (max-width: 1024px) {
 
-    /* Header */
-    .header-container {
+    /* Header & Footer same style */
+    .header-container,
+    .footer-container {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -365,7 +366,7 @@ footer nav a {
     /* About Section */
     #about {
         flex-direction: column;
-        align-items: flex-start; /* keep text left-aligned */
+        align-items: flex-start; /* professional left alignment */
         text-align: left;
         gap: 2rem;
     }
@@ -375,8 +376,35 @@ footer nav a {
         margin: 0;
     }
     #about .about-image img {
-        max-width: 100%;
+        max-width: 120%; /* slightly bigger than before */
         height: auto;
+        display: block;
+    }
+
+    /* Executive Dashboard Intro Section */
+    #introduction-executive-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .dashboard-image img {
+        max-width: 120%; /* bigger image */
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    /* Project Overview */
+    .overview-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0.25rem; /* smaller space between subtitle and paragraph */
+    }
+
+    /* Process Section */
+    .process-items-grid {
+        grid-template-columns: 1fr; /* one column */
+        gap: 1.5rem;
     }
 
     /* Projects & Workflows */
@@ -389,37 +417,12 @@ footer nav a {
     .project, .workflows {
         flex: 1 1 100%;
     }
-
-    /* Project Overview */
-    .overview-item {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        gap: 0.5rem;
-    }
-
-    /* Process Section */
-    .process-items-grid {
-        grid-template-columns: 1fr; /* stack vertically */
-    }
-
-    /* Executive Dashboard Intro */
-    #introduction-executive-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-    }
-    .dashboard-image img {
-        max-width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
 
-    /* Font size adjustments */
+    /* Font adjustments */
     body {
         font-size: 14px;
     }
@@ -430,7 +433,7 @@ footer nav a {
         font-size: 1rem;
     }
 
-    /* Skills Logos */
+    /* Skills logos smaller */
     .skills-logos img {
         width: 40px;
         height: 40px;
@@ -440,8 +443,8 @@ footer nav a {
     .footer-container {
         flex-direction: column;
         gap: 0.5rem;
-        align-items: flex-start;
-        padding-left: 5%;
+        align-items: center; /* center footer elements like header */
+        padding: 0 5%;
     }
 
     /* Back-to-top arrow */
@@ -449,13 +452,13 @@ footer nav a {
         font-size: 1.5rem;
     }
 
-    /* About Section Image smaller */
+    /* About Section Image */
     #about .about-image img {
-        max-width: 95%;
+        max-width: 100%;
         margin: 0;
     }
 
-    /* Dashboard image smaller */
+    /* Executive Dashboard Image */
     .dashboard-image img {
         max-width: 100%;
         margin: 0;
@@ -467,8 +470,11 @@ footer nav a {
         max-width: 100%;
     }
 
-    /* Ensure proper stacking and alignment */
-    #about, #introduction-executive-wrapper, .overview-item {
+    /* Overview & Process spacing */
+    .overview-item {
+        gap: 0.25rem;
+    }
+    .process-items-grid {
         gap: 1rem;
     }
 }
