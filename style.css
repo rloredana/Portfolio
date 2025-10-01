@@ -346,11 +346,6 @@ footer nav a {
 /* ======================= MOBILE RESPONSIVE STYLES FOR INDEX.HTML ======================= */
 @media (max-width: 768px) {
 
-  /* ---------------- General Section Padding ---------------- */
-  .section-wrapper {
-    padding: 1.5rem 1rem;
-  }
-
   /* ---------------- Header ---------------- */
   header nav {
     display: none; /* hide nav links on mobile */
@@ -359,24 +354,32 @@ footer nav a {
   /* ---------------- About Section ---------------- */
   #about {
     flex-direction: column;
-    gap: 0; /* remove extra space */
-    position: relative;
+    gap: 0;
     text-align: left;
+    position: relative;
   }
 
+  /* Text floats slightly over image with dynamic margin */
   #about .content-wrapper {
     position: relative;
     z-index: 2;
     background: rgba(255, 255, 255, 0.85); /* subtle background for readability */
     padding: 1rem;
-    margin-top: -3rem; /* text floats over image */
     border-radius: 8px;
+    /* dynamic negative margin: min 30px, preferred 8% of width, max 80px */
+    margin-top: clamp(-30px, -8%, -80px);
+  }
+
+  /* Ensure image stays in flow */
+  #about .about-image {
+    position: relative;
+    z-index: 1;
   }
 
   #about .about-image img {
     width: 100%;
-    height: auto;
     display: block;
+    height: auto;
   }
 
   /* ---------------- Section Titles & Subtitles ---------------- */
@@ -387,7 +390,7 @@ footer nav a {
 
   .section-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem; /* reduce space to paragraph */
+    margin-bottom: 0.5rem;
   }
 
   /* ---------------- Projects & Workflows ---------------- */
@@ -399,7 +402,7 @@ footer nav a {
 
   .project,
   .workflows {
-    flex: 1 1 100%; /* full width */
+    flex: 1 1 100%;
     padding: 1rem;
   }
 
@@ -425,22 +428,6 @@ footer nav a {
     line-height: 1.5;
   }
 
-  /* ---------------- Project Overview (if any) ---------------- */
-  .overview-item {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .overview-item h3 {
-    min-width: auto;
-    font-size: 1rem;
-  }
-
-  .overview-item p {
-    font-size: 0.95rem;
-  }
-
   /* ---------------- Skills Logos ---------------- */
   .skills-logos ul {
     flex-wrap: wrap;
@@ -461,4 +448,5 @@ footer nav a {
     text-align: center;
     width: 100%;
   }
+
 }
