@@ -396,8 +396,8 @@ footer nav a {
         position: relative !important;
     }
     .dashboard-image img {
-        max-width: 110% !important; /* larger image */
-        margin-left: -15px !important; /* slight overlap effect */
+        max-width: 100% !important; /* larger image */
+        margin-left: 10px !important; /* slight overlap effect */
         height: auto !important;
         border-radius: 12px !important;
     }
@@ -489,6 +489,7 @@ footer nav a {
         gap: 0.25rem !important;
     }
 }
+
 
 
 
