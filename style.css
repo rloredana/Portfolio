@@ -414,12 +414,13 @@ footer nav a {
     }
 
     /* Process Section */
+    #process .section-title {
+        margin-bottom: 1rem !important; /* tighten gap just here */
+        padding-bottom: 0 !important;
+    }
     .process-wrapper {
         padding-top: 2rem !important; /* match Project Overview */
         padding-bottom: 2rem !important;
-    }
-    .process-wrapper .section-title {
-        margin-bottom: 1rem !important; /* reduce gap below title */
     }
     .process-items-grid {
         display: grid !important;
@@ -495,12 +496,12 @@ footer nav a {
     .overview-item {
         gap: 0.25rem !important;
     }
+    #process .section-title {
+        margin-bottom: 0.75rem !important; /* tighter on small screens */
+    }
     .process-wrapper {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
-    }
-    .process-wrapper .section-title {
-        margin-bottom: 1rem !important; /* reduce gap below title */
     }
     .process-items-grid {
         gap: 0.75rem !important;
