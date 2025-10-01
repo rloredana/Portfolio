@@ -342,3 +342,89 @@ footer nav a {
     color: gray; /* Changes color when hovered */
     transform: translateX(-50%) translateY(-5px); /* Moves arrow up by 5px, keeps horizontal centering */
 }
+
+/* =======================
+   MOBILE RESPONSIVENESS
+   ======================= */
+@media (max-width: 1024px) {
+    /* Header adjustments */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* About section stack */
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    #about .content-wrapper,
+    #about .about-image {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+    #about .about-image img {
+        max-width: 80%;
+    }
+
+    /* Projects & workflows stack */
+    .projects-container,
+    .workflows-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project, .workflows {
+        flex: 1 1 90%;
+    }
+
+    /* Project overview & process sections */
+    .overview-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .overview-item h3 {
+        min-width: auto;
+        margin-bottom: 0.5rem;
+    }
+    .process-items-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Make fonts smaller */
+    body {
+        font-size: 14px;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Dashboard image smaller */
+    .dashboard-image img {
+        max-width: 95%;
+    }
+
+    /* Skills logos smaller */
+    .skills-logos img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+
