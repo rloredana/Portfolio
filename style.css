@@ -343,42 +343,49 @@ footer nav a {
     transform: translateX(-50%) translateY(-5px); /* Moves arrow up by 5px, keeps horizontal centering */
 }
 
-/* ======================= MOBILE RESPONSIVE STYLES FOR INDEX.HTML ======================= */
+/* ======================= FULL MOBILE RESPONSIVE STYLES ======================= */
 @media (max-width: 768px) {
 
   /* ---------------- Header ---------------- */
   header nav {
-    display: none;
+    display: none; /* hide nav links on mobile */
   }
 
   /* ---------------- About Section ---------------- */
   #about {
     position: relative; /* parent for absolute positioning */
-    padding-top: 1rem; /* add some space above text */
+    display: block; /* override flex */
+    padding-top: 1rem; /* spacing above text */
   }
 
-  /* Text floats over image */
-  #about .content-wrapper {
-    position: absolute; /* float over image */
-    top: 10%; /* adjust vertical position */
-    left: 5%;
-    right: 5%;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.9); /* subtle background */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* subtle floating shadow */
-  }
-
-  /* Image stays in flow */
   #about .about-image {
-    width: 100%;
+    position: relative;
+    min-height: 250px; /* ensures image takes space for overlap */
   }
 
   #about .about-image img {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  #about .content-wrapper {
+    position: absolute;
+    top: clamp(30px, 8%, 80px); /* dynamic overlap based on screen width */
+    left: 5%;
+    right: 5%;
+    background: rgba(255,255,255,0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    z-index: 2;
+  }
+
+  /* Optional subtle hover/tap lift effect */
+  #about .content-wrapper:hover,
+  #about .content-wrapper:active {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
   }
 
   /* ---------------- Section Titles & Subtitles ---------------- */
@@ -413,7 +420,7 @@ footer nav a {
 
   /* ---------------- Process Section ---------------- */
   .process-items-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* single column */
     gap: 1rem;
   }
 
@@ -431,6 +438,7 @@ footer nav a {
   .skills-logos ul {
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
   }
 
   .skills-logos img {
@@ -440,11 +448,12 @@ footer nav a {
 
   /* ---------------- Footer ---------------- */
   footer nav {
-    display: none;
+    display: none; /* hide footer links */
   }
 
   .footer-container p {
     text-align: center;
     width: 100%;
   }
+
 }
