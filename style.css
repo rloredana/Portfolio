@@ -389,17 +389,20 @@ footer nav a {
         text-align: left !important;
         position: relative !important;
         overflow: visible !important;
+        gap: 1.5rem; /* spacing between text and image */
     }
     .dashboard-image {
         width: 100% !important;
-        margin-top: 1rem !important;
+        margin-top: 0 !important;
         position: relative !important;
+        align-self: flex-start; /* aligns image with content */
     }
     .dashboard-image img {
-        max-width: 100% !important; /* larger image */
-        margin-left: 10px !important; /* slight overlap effect */
+        max-width: 120% !important; /* slightly bigger */
         height: auto !important;
         border-radius: 12px !important;
+        margin-left: 0 !important; /* align with text */
+        display: block;
     }
 
     /* Project Overview */
@@ -411,10 +414,14 @@ footer nav a {
     }
 
     /* Process Section */
+    .process-wrapper {
+        padding-top: 2rem !important; /* match Project Overview */
+        padding-bottom: 2rem !important;
+    }
     .process-items-grid {
         display: grid !important;
         grid-template-columns: 1fr !important; /* single column */
-        gap: 0.25rem !important;
+        gap: 1rem !important; /* smaller spacing between items */
     }
 
     /* Projects & Workflows */
@@ -470,8 +477,8 @@ footer nav a {
 
     /* Executive Dashboard Image */
     .dashboard-image img {
-        max-width: 100% !important;
-        margin-left: 0px !important;
+        max-width: 100% !important; /* fit phone screen */
+        margin-left: 0 !important;
         margin-top: 0.5rem !important;
     }
 
@@ -485,11 +492,11 @@ footer nav a {
     .overview-item {
         gap: 0.25rem !important;
     }
+    .process-wrapper {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
     .process-items-grid {
-        gap: 0.25rem !important;
+        gap: 0.75rem !important;
     }
 }
-
-
-
-
