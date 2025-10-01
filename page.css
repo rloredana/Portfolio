@@ -1,0 +1,106 @@
+/* ============================================================================
+   INTRODUCTION SECTION
+   ============================================================================ */
+.introduction-executive-wrapper {
+    background-color: #ffffff;
+    padding: 2rem 2rem;
+}
+
+#introduction-executive-wrapper {
+    display: flex;
+    flex-direction: column;   /* stack title, text, image vertically */
+    align-items: center;      /* center all horizontally */
+    text-align: center;
+}
+
+#introduction-executive-wrapper .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#introduction-executive-wrapper p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.dashboard-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.dashboard-image img {
+    max-width: 90%;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* ============================================================================
+   PROJECT OVERVIEW SECTION
+   ============================================================================ */
+.project-overiew-wrapper {
+    background-color: #f4f7fd;
+}
+
+.overview-item {
+    display: flex;               /* place label + text in a row */
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;       /* space between rows */
+    gap: 2rem;                   /* space between label and text */
+}
+
+.overview-item h3 {
+    font-size: 1.1rem;
+    color: #333;
+    min-width: 150px;            /* ensures labels line up neatly */
+    margin: 0;
+}
+
+.overview-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    flex: 1;                     /* allows text to expand */
+    line-height: 1.6;
+}
+
+/* ============================================================================ 
+   PROCESS SECTION - 2 COLUMNS FOR ITEMS ONLY
+   ============================================================================ */
+.process-wrapper .content-wrapper {
+    display: flex;
+    flex-direction: column; /* keep the h2 on top naturally */
+    gap: 2rem;              /* spacing between h2 and the grid of items */
+}
+
+.process-items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 2rem;                             /* space between items */
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;                /* h3 above p */
+}
+
+.process-item h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.process-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+

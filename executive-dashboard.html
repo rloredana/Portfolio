@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Name | Data Portfolio</title>
+    <link rel="icon" type="image/png" href="Lr_Icons_Logos/rl_white.png"> <!-- Some browsers (like Chrome) will automatically look for a favicon.ico file in the root directory of the website -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page.css"> 
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo and Name -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="Lr_Icons_Logos/rl_white.png" alt="LR Logo" class="logo">
+                </a>
+                <h1>My Name</h1>
+            </div>
+            <!-- Navigation Links -->
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <div class="section-wrapper introduction-executive-wrapper">
+        <section id="introduction-executive-wrapper">
+            <div class="content-wrapper">
+                <!-- Dashboard Name -->
+                <h2 class="section-title">Executive Performance Dashboard</h2>
+                <p>An executive dashboard tracking key metrics, revenue trends, client performance, and insights through charts and visualizations, providing a clear overview of business performance toward targets.</p>
+                <br> <!-- This adds space between the two paragraphs -->
+            </div>
+            <div class="dashboard-image">
+                <img src="ExecutiveDash.png" alt="Executive Dashboard Image">
+            </div>
+        </section>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="section-wrapper project-overiew-wrapper">
+        <section id="project-overview">
+            <div class="content-wrapper">
+                <h2 class="section-title">Project Overview</h2>
+
+            <div class="overview-item">
+                <h3 class="section-subtitle">Objective</h3>
+                <p>Enable executives to monitor key performance indicators, track trends, and make data-driven decisions across multiple business areas, including revenue, client growth, and retention.</p>
+            </div>
+
+            <div class="overview-item">
+                <h3 class="section-subtitle">Audience</h3>
+                <p>CEO, Executive Directors, Finance Teams, Marketing & Sales Leadership.</p>
+            </div>
+
+            <div class="overview-item">
+                <h3 class="section-subtitle">Technologies</h3>
+                <p>Power BI for visualization, BigQuery for data warehousing, CRM & ERP systems, DSP platforms, internal databases, and ARIMA+ forecasting models.</p>
+            </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- Process -->
+<div class="section-wrapper process-wrapper">
+    <section id="process">
+        <div class="content-wrapper">
+            <h2 class="section-title">Process</h2>
+
+            <div class="process-items-grid">
+
+                <div class="process-item">
+                    <h3 class="section-subtitle">Data Sources & Preparation</h3>
+                    <ul class="process-list">
+                        <li><strong>Client & User Data:</strong> Platform tables loaded into BigQuery.</li>
+                        <li><strong>Campaign Data:</strong> DSP campaigns loaded into BigQuery for ad insights.</li>
+                        <li><strong>Financial Data:</strong> Transactions from ERP system consolidated in BigQuery.</li>
+                        <li><strong>Target Data:</strong> CRM targets table for sales tracking.</li>
+                        <li><strong>Data Preparation:</strong> Client segmentation (New, Returning, Existing), consolidated client-transaction view, consistency across platforms.</li>
+                    </ul>
+                </div>
+
+                <div class="process-item">
+                    <h3 class="section-subtitle">Dashboard Development & Design</h3>
+                    <ul class="process-list">
+                        <li><strong>KPI Cards:</strong> Revenue YTD, Gross Profit YTD, New Clients YTD, Target Achievement, Retention Rate.</li>
+                        <li><strong>Visualizations:</strong> Line Chart (Revenue vs Target), Bar Chart (Revenue by Segment), Ribbon Chart (Revenue by Client Segment/Channel), Decomposition Tree (Service & Package).</li>
+                        <li><strong>Forecasting:</strong> ARIMA+ models for Revenue and GP by month, client type, and segment.</li>
+                        <li><strong>Tools:</strong> Power BI integrated with BigQuery datasets for real-time insights.</li>
+                    </ul>
+                </div>
+
+                <div class="process-item">
+                    <h3 class="section-subtitle">Key Insights</h3>
+                    <ul class="process-list">
+                        <li>Revenue and GP trends by client type highlight growth opportunities.</li>
+                        <li>Client segmentation shows contribution of New, Returning, and Existing clients.</li>
+                        <li>Forecasting identifies potential gaps in target achievement for proactive strategy.</li>
+                        <li>Channel analysis shows which marketing channels drive revenue by segment.</li>
+                    </ul>
+                </div>
+
+                <div class="process-item">
+                    <h3 class="section-subtitle">Impact</h3>
+                    <ul class="process-list">
+                        <li>Single source of truth for executive KPIs and trends.</li>
+                        <li><strong>Time saved:</strong> Eliminates manual data pulls from multiple platforms (CRM, ERP, DSP, platform databases) and Excel consolidation.</li>
+                        <li>Supports data-driven decisions across finance, marketing, and sales.</li>
+                        <li>Enables proactive client acquisition, retention, and revenue management.</li>
+                        <li>Highlights high-value segments and performance gaps for strategic planning.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!-- Projects Section -->
+<div class="section-wrapper projects-wrapper">
+    <section id="projects">
+        <div class="content-wrapper">
+            <!-- Projects Title -->
+            <h2 class="section-title">Other Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="Dash_Images/SALESNEW_.png" alt="Sales Dashboard">
+                    <h3 class="section-subtitle">Sales Dashboard</h3>
+                    <p>Interactive sales dashboard displaying key metrics, performance trends, and insights.</p>
+                    <br>
+                    <p>Tools: Loker Studio, Salesforce, Excel.</p>
+                </div>
+                <a href="executive-dashboard.html" class="project">
+                    <img src="Dash_Images/EXECNEW_.png" alt="Product Insights">
+                    <h3 class="section-subtitle">Executive Performance Dashboard</h3>
+                    <p>Ad platform insights dashboard showcasing user acquisition, and subscription analytics.</p>
+                     <br>
+                    <p>Tools: PowerBI, SQL, BigQuery.</p>
+                </a>
+                <div class="project">
+                    <img src="Dash_Images/trl.png" alt="SQL Project">
+                    <h3 class="section-subtitle">Marketing Insights</h3>
+                    <p>Marketing dashboard tracking campaign performance, engagement, and conversios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 My Name</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <!-- Up Arrow Button -->
+            <a href="#" class="back-to-top">︿</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const backToTop = document.querySelector(".back-to-top");
+    
+            // Show/hide button on scroll
+            window.addEventListener("scroll", function() {
+                if (window.scrollY > 300) { 
+                    backToTop.style.display = "block"; // Show button
+                } else {
+                    backToTop.style.display = "none"; // Hide button
+                }
+            });
+    
+            // Smooth scroll to top
+            backToTop.addEventListener("click", function(e) {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>    
+    
+</body>
+</html>
