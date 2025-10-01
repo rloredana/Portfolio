@@ -389,7 +389,7 @@ footer nav a {
         text-align: left !important;
         position: relative !important;
         overflow: visible !important;
-        gap: 1.5rem; /* spacing between text and image */
+        gap: 0.5rem; /* spacing between text and image */
     }
     .dashboard-image {
         width: 100% !important;
@@ -500,4 +500,5 @@ footer nav a {
         gap: 0.75rem !important;
     }
 }
+
 
