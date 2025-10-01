@@ -358,8 +358,8 @@ footer nav a {
   #about {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* space between text and image */
-    padding: 1rem 1rem; /* consistent padding */
+    gap: -1rem; /* space between text and image */
+    padding: 0rem 1rem; /* consistent padding */
     text-align: left; /* left align all text */
   }
 
@@ -425,4 +425,5 @@ footer nav a {
   }
 
 }
+
 
