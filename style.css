@@ -353,69 +353,79 @@ footer nav a {
     /* Header & Footer same style */
     .header-container,
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
     }
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px !important;
     }
 
     /* About Section */
     #about {
-        flex-direction: column;
-        align-items: flex-start; /* professional left alignment */
-        text-align: left;
-        gap: 2rem;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        gap: 2rem !important;
     }
     #about .content-wrapper,
     #about .about-image {
-        flex: 1 1 100%;
-        margin: 0;
+        flex: 1 1 100% !important;
+        margin: 0 !important;
     }
     #about .about-image img {
-        max-width: 120%; /* slightly bigger than before */
-        height: auto;
+        max-width: 120% !important;
+        height: auto !important;
         display: block;
     }
 
     /* Executive Dashboard Intro Section */
     #introduction-executive-wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        position: relative !important;
+        overflow: visible !important;
+    }
+    .dashboard-image {
+        width: 100% !important;
+        margin-top: 1rem !important;
+        position: relative !important;
     }
     .dashboard-image img {
-        max-width: 120%; /* bigger image */
-        height: auto;
-        margin-top: 1rem;
+        max-width: 130% !important; /* larger image */
+        margin-left: -15px !important; /* slight overlap effect */
+        height: auto !important;
+        border-radius: 12px !important;
     }
 
     /* Project Overview */
     .overview-item {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
-        gap: 0.25rem; /* smaller space between subtitle and paragraph */
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        gap: 0.25rem !important; /* smaller space */
     }
 
     /* Process Section */
     .process-items-grid {
-        grid-template-columns: 1fr; /* one column */
-        gap: 1.5rem;
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* single column */
+        gap: 1.5rem !important;
     }
 
     /* Projects & Workflows */
     .projects-container,
     .workflows-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 2rem;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 2rem !important;
     }
     .project, .workflows {
-        flex: 1 1 100%;
+        flex: 1 1 100% !important;
     }
 }
 
@@ -424,57 +434,58 @@ footer nav a {
 
     /* Font adjustments */
     body {
-        font-size: 14px;
+        font-size: 14px !important;
     }
     .section-title {
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
     }
     .section-subtitle {
-        font-size: 1rem;
+        font-size: 1rem !important;
     }
 
     /* Skills logos smaller */
     .skills-logos img {
-        width: 40px;
-        height: 40px;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     /* Footer adjustments */
     .footer-container {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center; /* center footer elements like header */
-        padding: 0 5%;
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        align-items: center !important;
+        padding: 0 5% !important;
     }
 
     /* Back-to-top arrow */
     .back-to-top {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
     }
 
     /* About Section Image */
     #about .about-image img {
-        max-width: 100%;
-        margin: 0;
+        max-width: 100% !important;
+        margin: 0 !important;
     }
 
     /* Executive Dashboard Image */
     .dashboard-image img {
-        max-width: 100%;
-        margin: 0;
+        max-width: 110% !important;
+        margin-left: -10px !important;
+        margin-top: 0.5rem !important;
     }
 
     /* Introduction text */
     #introduction-executive-wrapper p {
-        font-size: 1rem;
-        max-width: 100%;
+        font-size: 1rem !important;
+        max-width: 100% !important;
     }
 
     /* Overview & Process spacing */
     .overview-item {
-        gap: 0.25rem;
+        gap: 0.25rem !important;
     }
     .process-items-grid {
-        gap: 1rem;
+        gap: 1rem !important;
     }
 }
