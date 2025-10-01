@@ -343,29 +343,128 @@ footer nav a {
     transform: translateX(-50%) translateY(-5px); /* Moves arrow up by 5px, keeps horizontal centering */
 }
 
-/* =======================
-   MOBILE RESPONSIVENESS - STYLE.CSS
-   ======================= */
+/* ======================= MOBILE RESPONSIVE STYLES ======================= */
 @media (max-width: 768px) {
-    /* Header: keep only logo and name */
-    nav {
-        display: none; /* hide navigation links */
-    }
 
-    .header-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 1rem 0;
-    }
+  /* ---------------- General Section Padding ---------------- */
+  .section-wrapper {
+    padding: 1.5rem 1rem;
+  }
 
-    /* About, Projects, Workflows, Skills sections */
-    .section-wrapper {
-        display: none; /* hide all content except header on mobile */
-    }
+  /* ---------------- About Section ---------------- */
+  #about {
+    flex-direction: column; /* stack text + image */
+    gap: 1rem;
+    text-align: left;
+  }
 
-    /* Footer */
-    footer {
-        display: none; /* hide footer for a clean mobile view */
-    }
+  #about .content-wrapper {
+    flex: 1 1 100%;
+    margin-right: 0; /* remove negative margin */
+  }
+
+  #about .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ---------------- Section Titles & Subtitles ---------------- */
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem; /* reduce space to paragraph */
+  }
+
+  /* ---------------- Projects & Workflows ---------------- */
+  .projects-container,
+  .workflows-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project,
+  .workflows {
+    flex: 1 1 100%; /* full width */
+    padding: 1rem;
+  }
+
+  .project img,
+  .workflows img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ---------------- Process Section ---------------- */
+  .process-items-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1rem;
+  }
+
+  .process-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .process-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* ---------------- Project Overview ---------------- */
+  .overview-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .overview-item h3 {
+    min-width: auto;
+    font-size: 1rem;
+  }
+
+  .overview-item p {
+    font-size: 0.95rem;
+  }
+
+  /* ---------------- Executive Dashboard Section ---------------- */
+  #introduction-executive-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #introduction-executive-wrapper .section-title {
+    font-size: 1.6rem;
+  }
+
+  #introduction-executive-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard-image {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .dashboard-image img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  /* ---------------- Skills Logos ---------------- */
+  .skills-logos ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skills-logos img {
+    width: 40px;
+    height: 40px;
+  }
+
 }
