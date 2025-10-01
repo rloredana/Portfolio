@@ -104,3 +104,30 @@
     margin: 0;
 }
 
+/* =======================
+   MOBILE RESPONSIVENESS - PAGE.CSS
+   ======================= */
+@media (max-width: 768px) {
+    /* Hide nav links */
+    nav {
+        display: none;
+    }
+
+    /* Header adjustments */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 0;
+    }
+
+    /* Hide all page content except header */
+    .section-wrapper {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        display: none;
+    }
+}
