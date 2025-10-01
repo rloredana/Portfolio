@@ -358,23 +358,25 @@ footer nav a {
   #about {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; /* space between text and image */
-    padding: 2rem 1rem; /* nice padding on all sides */
-    text-align: left; /* left align text */
+    gap: 1rem; /* space between text and image */
+    padding: 1.5rem 1rem; /* consistent padding */
+    text-align: left; /* left align all text */
   }
 
   #about .content-wrapper {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.95); /* subtle background for readability */
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08); /* soft floating effect */
+    text-align: left; /* ensure text inside is left aligned */
+  }
+
+  #about .content-wrapper p {
+    text-align: left; /* paragraphs aligned left */
+    margin-bottom: 0.75rem; /* spacing between paragraphs */
   }
 
   #about .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* optional: rounded corners for image */
     display: block;
+    border-radius: 5px; /* optional small rounding */
   }
 
   /* ---------------- Section Titles & Subtitles ---------------- */
@@ -428,4 +430,5 @@ footer nav a {
     text-align: center;
     width: 100%;
   }
+
 }
