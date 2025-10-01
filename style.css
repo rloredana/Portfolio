@@ -418,6 +418,9 @@ footer nav a {
         padding-top: 2rem !important; /* match Project Overview */
         padding-bottom: 2rem !important;
     }
+    .process-wrapper .section-title {
+        margin-bottom: 1rem !important; /* reduce gap below title */
+    }
     .process-items-grid {
         display: grid !important;
         grid-template-columns: 1fr !important; /* single column */
@@ -495,6 +498,9 @@ footer nav a {
     .process-wrapper {
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
+    }
+    .process-wrapper .section-title {
+        margin-bottom: 1rem !important; /* reduce gap below title */
     }
     .process-items-grid {
         gap: 0.75rem !important;
