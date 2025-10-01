@@ -77,7 +77,6 @@
 .process-wrapper .content-wrapper {
     display: flex;
     flex-direction: column; /* keep the h2 on top naturally */
-    gap: 2rem;              /* spacing between h2 and the grid of items */
 }
 
 .process-items-grid {
@@ -103,3 +102,4 @@
     line-height: 1.6;
     margin: 0;
 }
+
