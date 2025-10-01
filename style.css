@@ -396,7 +396,7 @@ footer nav a {
         position: relative !important;
     }
     .dashboard-image img {
-        max-width: 130% !important; /* larger image */
+        max-width: 110% !important; /* larger image */
         margin-left: -15px !important; /* slight overlap effect */
         height: auto !important;
         border-radius: 12px !important;
@@ -414,7 +414,7 @@ footer nav a {
     .process-items-grid {
         display: grid !important;
         grid-template-columns: 1fr !important; /* single column */
-        gap: 1.5rem !important;
+        gap: 0.25rem !important;
     }
 
     /* Projects & Workflows */
@@ -489,3 +489,4 @@ footer nav a {
         gap: 1rem !important;
     }
 }
+
