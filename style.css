@@ -342,3 +342,133 @@ footer nav a {
     color: gray; /* Changes color when hovered */
     transform: translateX(-50%) translateY(-5px); /* Moves arrow up by 5px, keeps horizontal centering */
 }
+
+/* =======================
+   PROFESSIONAL MOBILE RESPONSIVENESS
+   ======================= */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* About Section */
+    #about {
+        flex-direction: column;
+        align-items: flex-start; /* keep text left-aligned */
+        text-align: left;
+        gap: 2rem;
+    }
+    #about .content-wrapper,
+    #about .about-image {
+        flex: 1 1 100%;
+        margin: 0;
+    }
+    #about .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Projects & Workflows */
+    .projects-container,
+    .workflows-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+    .project, .workflows {
+        flex: 1 1 100%;
+    }
+
+    /* Project Overview */
+    .overview-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0.5rem;
+    }
+
+    /* Process Section */
+    .process-items-grid {
+        grid-template-columns: 1fr; /* stack vertically */
+    }
+
+    /* Executive Dashboard Intro */
+    #introduction-executive-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .dashboard-image img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    /* Font size adjustments */
+    body {
+        font-size: 14px;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Skills Logos */
+    .skills-logos img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+
+    /* Back-to-top arrow */
+    .back-to-top {
+        font-size: 1.5rem;
+    }
+
+    /* About Section Image smaller */
+    #about .about-image img {
+        max-width: 95%;
+        margin: 0;
+    }
+
+    /* Dashboard image smaller */
+    .dashboard-image img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    /* Introduction text */
+    #introduction-executive-wrapper p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    /* Ensure proper stacking and alignment */
+    #about, #introduction-executive-wrapper, .overview-item {
+        gap: 1rem;
+    }
+}
