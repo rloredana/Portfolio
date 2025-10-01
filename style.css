@@ -419,9 +419,9 @@ footer nav a {
         padding-bottom: 2rem !important;
     }
 
-   .process-wrapper .section-title {
-    margin-bottom: 1rem !important; /* tighten gap between title and items */
-   }
+    .process-wrapper .section-title {
+        margin-bottom: 0.25rem !important; /* tighten gap between title and items */
+    }
    
     .process-items-grid {
         display: grid !important;
@@ -505,6 +505,7 @@ footer nav a {
         gap: 0.75rem !important;
     }
 }
+
 
 
 
