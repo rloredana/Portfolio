@@ -358,26 +358,25 @@ footer nav a {
 
   /* ---------------- About Section ---------------- */
   #about {
-    flex-direction: column; /* stack text + image */
-    gap: 1rem;
-    text-align: left;
+    flex-direction: column;
+    gap: 0; /* remove extra space */
     position: relative;
+    text-align: left;
   }
 
   #about .content-wrapper {
-    flex: 1 1 100%;
-    margin-right: 0;
+    position: relative;
     z-index: 2;
-    margin-top: -1rem; /* slight overlap over image */
-    padding: 0 0.5rem;
+    background: rgba(255, 255, 255, 0.85); /* subtle background for readability */
+    padding: 1rem;
+    margin-top: -3rem; /* text floats over image */
+    border-radius: 8px;
   }
 
   #about .about-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    position: relative;
-    z-index: 1;
   }
 
   /* ---------------- Section Titles & Subtitles ---------------- */
@@ -388,7 +387,7 @@ footer nav a {
 
   .section-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* reduce space to paragraph */
   }
 
   /* ---------------- Projects & Workflows ---------------- */
@@ -462,5 +461,4 @@ footer nav a {
     text-align: center;
     width: 100%;
   }
-
 }
