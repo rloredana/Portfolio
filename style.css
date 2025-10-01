@@ -429,7 +429,7 @@ footer nav a {
     .workflows-container {
         flex-direction: column !important;
         align-items: stretch !important;
-        gap: 0.25rem !important;
+        gap: 1rem !important;
     }
     .project, .workflows {
         flex: 1 1 100% !important;
@@ -500,3 +500,4 @@ footer nav a {
         gap: 0.75rem !important;
     }
 }
+
