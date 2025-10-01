@@ -344,109 +344,28 @@ footer nav a {
 }
 
 /* =======================
-   RESPONSIVE MOBILE STYLING
+   MOBILE RESPONSIVENESS - STYLE.CSS
    ======================= */
-@media (max-width: 1024px) {
-    /* Header adjustments */
+@media (max-width: 768px) {
+    /* Header: keep only logo and name */
+    nav {
+        display: none; /* hide navigation links */
+    }
+
     .header-container {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
-    }
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    /* About section stack */
-    #about {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 1rem;
-    }
-    #about .content-wrapper,
-    #about .about-image {
-        flex: 1 1 100%;
-        margin: 0;
-    }
-    #about .about-image img {
-        max-width: 90%;
-        margin: 1rem auto;
-    }
-
-    /* Projects & workflows stack */
-    .projects-container,
-    .workflows-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    .project, .workflows {
-        flex: 1 1 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    /* Project overview & process sections */
-    .overview-item {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 1rem;
-    }
-    .overview-item h3 {
-        min-width: auto;
-        margin-bottom: 0.3rem;
-    }
-    .process-items-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    /* Section padding adjustments */
-    section {
-        padding: 2rem 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    /* Smaller tablets and large phones */
-    .section-title {
-        font-size: 1.4rem;
-    }
-    .section-subtitle {
-        font-size: 1.1rem;
-    }
-
-    /* Skills logos smaller */
-    .skills-logos img {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    /* Phones */
-    body {
-        font-size: 14px;
-    }
-
-    /* Header nav links stack vertically */
-    nav {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    /* Dashboard images & About image shrink */
-    .dashboard-image img,
-    #about .about-image img {
-        max-width: 95%;
-    }
-
-    /* Footer stack */
-    .footer-container {
-        flex-direction: column;
         gap: 0.5rem;
-        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* About, Projects, Workflows, Skills sections */
+    .section-wrapper {
+        display: none; /* hide all content except header on mobile */
+    }
+
+    /* Footer */
+    footer {
+        display: none; /* hide footer for a clean mobile view */
     }
 }
