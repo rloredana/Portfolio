@@ -343,7 +343,10 @@ footer nav a {
     transform: translateX(-50%) translateY(-5px); /* Moves arrow up by 5px, keeps horizontal centering */
 }
 
-/* ======================= FULL MOBILE RESPONSIVE STYLES ======================= */
+/* ============================================================================
+   MOBILE STYLING
+   ============================================================================ */
+
 @media (max-width: 768px) {
 
   /* ---------------- Header ---------------- */
@@ -353,45 +356,31 @@ footer nav a {
 
   /* ---------------- About Section ---------------- */
   #about {
-    position: relative; /* parent for absolute positioning */
-    display: block; /* override flex */
-    padding-top: 1rem; /* spacing above text */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space between text and image */
+    padding: 2rem 1rem; /* nice padding on all sides */
+    text-align: left; /* left align text */
   }
 
-  #about .about-image {
-    position: relative;
-    min-height: 250px; /* ensures image takes space for overlap */
+  #about .content-wrapper {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.95); /* subtle background for readability */
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08); /* soft floating effect */
   }
 
   #about .about-image img {
     width: 100%;
     height: auto;
+    border-radius: 10px; /* optional: rounded corners for image */
     display: block;
-  }
-
-  #about .content-wrapper {
-    position: absolute;
-    top: clamp(30px, 8%, 80px); /* dynamic overlap based on screen width */
-    left: 5%;
-    right: 5%;
-    background: rgba(255,255,255,0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    z-index: 2;
-  }
-
-  /* Optional subtle hover/tap lift effect */
-  #about .content-wrapper:hover,
-  #about .content-wrapper:active {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
   }
 
   /* ---------------- Section Titles & Subtitles ---------------- */
   .section-title {
     font-size: 1.4rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .section-subtitle {
@@ -418,22 +407,6 @@ footer nav a {
     height: auto;
   }
 
-  /* ---------------- Process Section ---------------- */
-  .process-items-grid {
-    grid-template-columns: 1fr; /* single column */
-    gap: 1rem;
-  }
-
-  .process-item h3 {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .process-item p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
   /* ---------------- Skills Logos ---------------- */
   .skills-logos ul {
     flex-wrap: wrap;
@@ -455,5 +428,4 @@ footer nav a {
     text-align: center;
     width: 100%;
   }
-
 }
