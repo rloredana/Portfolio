@@ -422,7 +422,7 @@ footer nav a {
     .process-items-grid {
         display: grid !important;
         grid-template-columns: 1fr !important; /* single column */
-        gap: 1rem !important; /* smaller spacing between items */
+        gap: 2rem !important; /* smaller spacing between items */
     }
 
     /* Projects & Workflows */
@@ -501,6 +501,7 @@ footer nav a {
         gap: 0.75rem !important;
     }
 }
+
 
 
 
